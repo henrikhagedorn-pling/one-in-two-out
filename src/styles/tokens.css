@@ -1,0 +1,87 @@
+/* 1-in-2-out – Design-Tokens (siehe SPEC.md, Abschnitt 6) */
+
+:root {
+  color-scheme: light dark;
+
+  /* Flächen */
+  --bg: #F3EFE6;
+  --surface: #FBF9F4;
+  --scrim: #2A2823;
+
+  /* Text */
+  --ink: #1D1B17;
+  --on-ink: #FBF9F4;
+  --muted: #625D53;
+  --tab-inactive: #857F73; /* nur für Schrift >= 24px */
+  --disabled: #A39C8F;
+  --placeholder: #8A8478;
+
+  /* Linien, Controls */
+  --hairline: #DCD5C6;
+  --segment: #ECE6D9;
+  --segment-selected: #FBF9F4;
+
+  /* Bedeutung */
+  --positive: #2C5C66;
+  --negative: #A94F27;
+  --on-negative: #FFFFFF;
+  --negative-soft: #F6E6DC;
+  --negative-link: #8A3F1E;
+
+  /* Toasts */
+  --toast-bg: #1D1B17;
+  --toast-text: #FBF9F4;
+  --toast-positive: #8CBEC7;
+  --toast-action: #E9A27C;
+
+  /* Typografie */
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-text: 'Hanken Grotesk', -apple-system, system-ui, sans-serif;
+
+  /* Maße */
+  --gutter: 24px;
+  --gutter-sheet: 20px;
+  --touch: 44px;
+  --row: 52px;
+  --row-all: 56px;
+  --radius-sheet: 14px;
+  --radius-button: 14px;
+  --radius-segment: 10px;
+  --button-height: 54px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161512;
+    --surface: #201E1A;
+    --scrim: #000000;
+
+    --ink: #EEE9DF;
+    --on-ink: #161512;
+    --muted: #A39C8F;
+    --tab-inactive: #7D776C;
+    --disabled: #5E594F;
+    --placeholder: #7D776C;
+
+    --hairline: #36332D;
+    --segment: #2A2823;
+    --segment-selected: #45413A;
+
+    --positive: #8CBEC7;
+    --negative: #E48B5E;
+    --on-negative: #161512;
+    --negative-soft: #3A2419;
+    --negative-link: #F0A983;
+
+    --toast-bg: #34312B;       /* nicht gezeichnet, Vorschlag */
+    --toast-text: #EEE9DF;
+    --toast-positive: #8CBEC7;
+    --toast-action: #F0A983;
+  }
+}
+
+/* Zahlen immer so setzen */
+.num {
+  font-family: var(--font-display);
+  font-variant-numeric: lining-nums tabular-nums;
+}
