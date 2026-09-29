@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Statisches Mockup 390x844 (Design-Referenz, nicht produktiv übernehmen). Google-Fonts-Link nur für die Vorschau; in der App Schriften bündeln (SPEC 6.2). Safe Areas hier hart eingetragen; in der App env(safe-area-inset-*) nutzen. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap">
+<style>
+body{margin:0;background:#000000}
+button,input{font:inherit;color:inherit}
+</style>
+<title>Import-Vorschau – Dunkel</title>
+</head>
+<body>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #000000; color: #EEE9DF; font-family: 'Hanken Grotesk', -apple-system, system-ui, sans-serif">
+<div style="position: absolute; top: 52px; left: 16px; right: 16px; height: 30px; background: #3A3731; border-radius: 12px 12px 0 0"></div>
+<div role="dialog" aria-label="Import prüfen" style="position: absolute; top: 64px; left: 0; right: 0; bottom: 0; background: #201E1A; border-radius: 14px 14px 0 0; display: flex; flex-direction: column">
+<div style="height: 14px; display: flex; justify-content: center; align-items: flex-end"><div style="width: 36px; height: 5px; border-radius: 3px; background: #4A463F"></div></div>
+<div style="height: 52px; box-sizing: border-box; padding: 0 8px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center">
+<button style="justify-self: start; height: 44px; padding: 0 12px; border: 0; background: none; font-size: 17px; color: #EEE9DF">Abbrechen</button>
+<div style="justify-self: center; font-size: 17px; font-weight: 600; white-space: nowrap">Import prüfen</div>
+<div></div>
+</div>
+<div style="flex-grow: 1; box-sizing: border-box; padding: 12px 24px 50px; display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #A39C8F"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6v18h12V7zM14 3v4h4"></path></svg><span style="flex-grow: 1">1in2out-backup-2026-09-06.csv</span><span>14 KB</span></div>
+<div style="margin-top: 22px; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 38px; line-height: 1.05; letter-spacing: -0.02em">142 Einträge gefunden</div>
+<div style="margin-top: 8px; display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 600; color: #8CBEC7"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span>0 fehlerhaft</span></div>
+<div style="margin-top: 22px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid #EEE9DF; border-bottom: 1px solid #36332D">
+<div style="padding: 12px 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; color: #A39C8F">Raus</span><span style="font-family: 'Newsreader', Georgia, serif; font-size: 26px; line-height: 1.1; font-variant-numeric: lining-nums tabular-nums">97</span></div>
+<div style="padding: 12px 0 12px 16px; border-left: 1px solid #36332D; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; color: #A39C8F">Rein</span><span style="font-family: 'Newsreader', Georgia, serif; font-size: 26px; line-height: 1.1; font-variant-numeric: lining-nums tabular-nums">38</span></div>
+<div style="padding: 12px 0 12px 16px; border-left: 1px solid #36332D; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; color: #A39C8F">Ersatz</span><span style="font-family: 'Newsreader', Georgia, serif; font-size: 26px; line-height: 1.1; font-variant-numeric: lining-nums tabular-nums">7</span></div>
+</div>
+<div style="padding: 12px 0; display: flex; justify-content: space-between; border-bottom: 1px solid #36332D; font-size: 14px"><span style="color: #A39C8F">Zeitraum</span><span>14. Juli – 6. Sep. 2026</span></div>
+<div style="margin-top: 22px; padding: 14px 16px; border-radius: 12px; background: #3A2419; display: flex; gap: 12px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E48B5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><path d="M12 4l9 16H3zM12 10v4M12 17v.5"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<p style="margin: 0; font-size: 15px; line-height: 1.4; text-wrap: pretty">Ersetzt deinen aktuellen Bestand von <b style="font-weight: 600">151 Einträgen</b> vollständig. Das lässt sich nicht rückgängig machen.</p>
+<button style="align-self: flex-start; min-height: 44px; padding: 0; border: 0; background: none; font-size: 15px; font-weight: 600; color: #F0A983; text-decoration: underline; text-underline-offset: 3px">Erst aktuellen Stand exportieren</button>
+</div>
+</div>
+<button style="margin-top: auto; height: 54px; border: 0; border-radius: 14px; background: #E48B5E; color: #161512; font-size: 17px; font-weight: 600">Bestand ersetzen</button>
+</div>
+</div>
+</div>
+</body>
+</html>

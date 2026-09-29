@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Statisches Mockup 390x844 (Design-Referenz, nicht produktiv übernehmen). Google-Fonts-Link nur für die Vorschau; in der App Schriften bündeln (SPEC 6.2). Safe Areas hier hart eingetragen; in der App env(safe-area-inset-*) nutzen. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap">
+<style>
+body{margin:0;background:#2A2823}
+button,input{font:inherit;color:inherit}
+input::placeholder{color:#8A8478}
+</style>
+<title>Eingabe – nach Speichern</title>
+</head>
+<body>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #2A2823; color: #1D1B17; font-family: 'Hanken Grotesk', -apple-system, system-ui, sans-serif">
+<div style="position: absolute; top: 52px; left: 16px; right: 16px; height: 30px; background: #CFC9BD; border-radius: 12px 12px 0 0"></div>
+<div role="dialog" aria-label="Neuer Eintrag" style="position: absolute; top: 64px; left: 0; right: 0; bottom: 0; background: #FBF9F4; border-radius: 14px 14px 0 0; display: flex; flex-direction: column">
+<div style="height: 14px; display: flex; justify-content: center; align-items: flex-end"><div style="width: 36px; height: 5px; border-radius: 3px; background: #DCD5C6"></div></div>
+<div style="height: 52px; box-sizing: border-box; padding: 0 8px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center">
+<button style="justify-self: start; height: 44px; padding: 0 12px; border: 0; background: none; font-size: 17px; color: #1D1B17">Schließen</button>
+<div style="justify-self: center; font-size: 17px; font-weight: 600">Neuer Eintrag</div>
+<button disabled style="justify-self: end; height: 44px; padding: 0 12px; border: 0; background: none; font-size: 17px; font-weight: 600; color: #A39C8F">Speichern</button>
+</div>
+<div style="padding: 8px 20px 0; display: flex; flex-direction: column">
+<div role="radiogroup" aria-label="Typ" style="height: 44px; box-sizing: border-box; padding: 3px; border-radius: 10px; background: #ECE6D9; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px">
+<button role="radio" aria-checked="false" style="border: 0; border-radius: 8px; background: none; font-size: 15px; font-weight: 500; color: #625D53">Rein</button>
+<button role="radio" aria-checked="true" style="border: 0; border-radius: 8px; background: #FBF9F4; box-shadow: 0 1px 2px rgba(29, 27, 23, 0.14); font-size: 15px; font-weight: 600; color: #1D1B17">Raus</button>
+<button role="radio" aria-checked="false" style="border: 0; border-radius: 8px; background: none; font-size: 15px; font-weight: 500; color: #625D53">Ersatz</button>
+</div>
+<label for="name" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Gegenstand</label>
+<input id="name" type="text" value="" placeholder="Was geht raus?" enterkeyhint="done" autocomplete="off" style="margin-top: 18px; height: 56px; box-sizing: border-box; padding: 0 2px; border: 0; border-bottom: 1.5px solid #1D1B17; background: none; font-family: 'Newsreader', Georgia, serif; font-size: 28px; letter-spacing: -0.01em; outline: none">
+<div style="margin-top: 14px; height: 60px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCD5C6">
+<label for="menge" style="font-size: 15px; color: #625D53">Menge</label>
+<div style="display: flex; align-items: center; gap: 4px">
+<button aria-label="Weniger" disabled style="width: 44px; height: 44px; border: 1px solid #DCD5C6; border-radius: 22px; background: none; padding: 0; display: flex; align-items: center; justify-content: center; color: #A39C8F"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"></path></svg></button>
+<input id="menge" type="text" inputmode="numeric" value="1" style="width: 64px; height: 44px; box-sizing: border-box; border: 0; background: none; text-align: center; font-family: 'Newsreader', Georgia, serif; font-size: 30px; font-variant-numeric: lining-nums tabular-nums; outline: none">
+<button aria-label="Mehr" style="width: 44px; height: 44px; border: 1px solid #DCD5C6; border-radius: 22px; background: none; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+</div>
+</div>
+<div style="height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #DCD5C6">
+<span style="font-size: 15px; color: #625D53">Datum</span>
+<button style="height: 44px; padding: 0 0 0 12px; border: 0; background: none; display: flex; align-items: center; gap: 8px; font-size: 16px"><span>Heute, 29. Sep.</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#625D53" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M4 10h16M9 3v4M15 3v4"></path></svg></button>
+</div>
+<div role="status" style="margin-top: 16px; min-height: 48px; box-sizing: border-box; padding: 0 16px; border-radius: 12px; background: #1D1B17; color: #FBF9F4; display: flex; align-items: center; gap: 10px; font-size: 15px">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8CBEC7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+<span><span style="font-weight: 600">Kabel × 20</span> raus · Saldo jetzt <span style="font-weight: 600; color: #8CBEC7">+29</span></span>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

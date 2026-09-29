@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Statisches Mockup 390x844 (Design-Referenz, nicht produktiv übernehmen). Google-Fonts-Link nur für die Vorschau; in der App Schriften bündeln (SPEC 6.2). Safe Areas hier hart eingetragen; in der App env(safe-area-inset-*) nutzen. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap">
+<style>
+body{margin:0;background:#F3EFE6}
+button,input{font:inherit;color:inherit}
+</style>
+<title>Backup</title>
+</head>
+<body>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3EFE6; color: #1D1B17; font-family: 'Hanken Grotesk', -apple-system, system-ui, sans-serif">
+<div style="position: absolute; top: 59px; left: 0; right: 0; height: 44px; padding: 0 8px; display: flex; align-items: center">
+<button style="height: 44px; padding: 0 10px 0 4px; border: 0; background: none; display: flex; align-items: center; gap: 2px; font-size: 17px; color: #1D1B17"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg><span>Saldo</span></button>
+</div>
+<div style="position: absolute; top: 103px; left: 0; right: 0; bottom: 88px; box-sizing: border-box; padding: 8px 24px 24px; display: flex; flex-direction: column">
+<h1 style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 40px; letter-spacing: -0.02em">Backup</h1>
+<div style="margin-top: 20px; display: flex; flex-direction: column; border-top: 1.5px solid #1D1B17">
+<div style="padding: 14px 0; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #DCD5C6">
+<span style="font-size: 15px; color: #625D53">Letztes Backup</span>
+<span style="display: flex; flex-direction: column; align-items: flex-end; gap: 2px"><span style="font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.1; color: #A94F27">vor 23 Tagen</span><span style="font-size: 13px; color: #625D53">6. September 2026</span></span>
+</div>
+<div style="padding: 14px 0; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #DCD5C6">
+<span style="font-size: 15px; color: #625D53">Einträge auf diesem Gerät</span>
+<span style="font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.1; font-variant-numeric: lining-nums tabular-nums">151</span>
+</div>
+</div>
+<div style="margin-top: 28px; display: flex; flex-direction: column; gap: 8px">
+<button style="height: 54px; border: 0; border-radius: 14px; background: #1D1B17; color: #FBF9F4; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M6 11H5v10h14V11h-1"></path></svg><span>CSV exportieren</span></button>
+<p style="margin: 0; font-size: 13px; line-height: 1.4; color: #625D53; text-wrap: pretty">Öffnet das Teilen-Menü. Dort „In Dateien sichern“ und iCloud Drive wählen.</p>
+</div>
+<div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px">
+<button style="height: 54px; border: 1.5px solid #1D1B17; border-radius: 14px; background: none; color: #1D1B17; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 17px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M6 11H5v10h14V11h-1"></path></svg><span>CSV importieren</span></button>
+<p style="margin: 0; font-size: 13px; line-height: 1.4; color: #625D53; text-wrap: pretty">Ersetzt den kompletten Bestand. Vorher siehst du eine Prüfung der Datei.</p>
+</div>
+<p style="margin: auto 0 0; padding-top: 16px; border-top: 1px solid #DCD5C6; font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 16px; line-height: 1.4; color: #625D53; text-wrap: pretty">Deine Daten liegen nur in diesem Browser, gebunden an diese Adresse. Vor einem Umzug exportieren und in der neuen Instanz importieren.</p>
+</div>
+<nav aria-label="Hauptnavigation" style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; box-sizing: border-box; padding: 4px 8px 34px; background: #FBF9F4; border-top: 1px solid #DCD5C6; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center">
+<button aria-current="page" style="height: 48px; border: 0; background: none; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #1D1B17; font-size: 11px; font-weight: 600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7 20h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg><span>Saldo</span></button>
+<button aria-label="Neuer Eintrag" style="justify-self: center; width: 64px; height: 44px; border: 0; border-radius: 22px; background: #1D1B17; color: #FBF9F4; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+<button style="height: 48px; border: 0; background: none; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #625D53; font-size: 11px; font-weight: 500"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 20V5M4 9l4-4 4 4M16 4v15M12 15l4 4 4-4"></path></svg><span>Einträge</span></button>
+</nav>
+</div>
+</body>
+</html>

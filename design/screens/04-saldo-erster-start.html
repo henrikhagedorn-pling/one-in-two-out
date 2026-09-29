@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Statisches Mockup 390x844 (Design-Referenz, nicht produktiv übernehmen). Google-Fonts-Link nur für die Vorschau; in der App Schriften bündeln (SPEC 6.2). Safe Areas hier hart eingetragen; in der App env(safe-area-inset-*) nutzen. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap">
+<style>
+body{margin:0;background:#F3EFE6}
+button,input{font:inherit;color:inherit}
+</style>
+<title>Saldo – Erster Start</title>
+</head>
+<body>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; background: #F3EFE6; color: #1D1B17; font-family: 'Hanken Grotesk', -apple-system, system-ui, sans-serif">
+<div style="position: absolute; top: 59px; left: 0; right: 0; height: 44px; box-sizing: border-box; padding: 0 8px 0 24px; display: flex; align-items: center; justify-content: space-between">
+<div style="font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 20px; letter-spacing: -0.01em">1-in-2-out</div>
+<button aria-label="Backup und Einstellungen" style="width: 44px; height: 44px; border: 0; background: none; padding: 0; display: flex; align-items: center; justify-content: center; color: #1D1B17"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18v4H3zM5 9v10h14V9M10 13h4"></path></svg></button>
+</div>
+<div style="position: absolute; top: 103px; left: 0; right: 0; bottom: 88px; box-sizing: border-box; padding: 48px 24px 24px; display: flex; flex-direction: column">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #625D53">Saldo</div>
+<div style="font-family: 'Newsreader', Georgia, serif; font-weight: 500; font-size: 176px; line-height: 0.86; letter-spacing: -0.045em; color: #1D1B17; font-variant-numeric: lining-nums tabular-nums; margin-left: -4px">0</div>
+<div style="display: flex; flex-direction: column; gap: 2px; margin-top: 18px">
+<div style="font-size: 19px; font-weight: 600; color: #1D1B17">Ausgeglichen</div>
+<div style="font-size: 15px; color: #625D53">Noch keine Einträge</div>
+</div>
+</div>
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px; padding: 18px 0 0; border-top: 1.5px solid #1D1B17">
+<p style="margin: 0; font-family: 'Newsreader', Georgia, serif; font-size: 24px; line-height: 1.25; letter-spacing: -0.01em; text-wrap: pretty">Für jedes Neue gehen zwei Dinge.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.45; color: #625D53; text-wrap: pretty">Tippe auf Plus und logge den ersten Gegenstand, der die Wohnung verlässt. Ersatz für Kaputtes zählt nicht.</p>
+</div>
+</div>
+<svg width="80" height="70" viewBox="0 0 80 70" fill="none" stroke="#625D53" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="position: absolute; left: 165px; top: 690px"><path d="M8 4c14 6 26 22 22 52"></path><path d="M24 50l6 8 6-8"></path></svg>
+<nav aria-label="Hauptnavigation" style="position: absolute; left: 0; right: 0; bottom: 0; height: 88px; box-sizing: border-box; padding: 4px 8px 34px; background: #FBF9F4; border-top: 1px solid #DCD5C6; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center">
+<button aria-current="page" style="height: 48px; border: 0; background: none; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #1D1B17; font-size: 11px; font-weight: 600"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M7 20h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"></path></svg><span>Saldo</span></button>
+<button aria-label="Neuer Eintrag" style="justify-self: center; width: 64px; height: 44px; border: 0; border-radius: 22px; background: #1D1B17; color: #FBF9F4; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></button>
+<button style="height: 48px; border: 0; background: none; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #625D53; font-size: 11px; font-weight: 500"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 20V5M4 9l4-4 4 4M16 4v15M12 15l4 4 4-4"></path></svg><span>Einträge</span></button>
+</nav>
+</div>
+</body>
+</html>
